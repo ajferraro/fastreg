@@ -1,3 +1,5 @@
+"""This module makes up some data for the test functions."""
+
 import numpy as np
 
 
