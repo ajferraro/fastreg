@@ -16,9 +16,9 @@ def scipy_regression(xdata, ydata):
         nspat = ydata.shape[1]
     else:
         nspat = 1
-    output = np.zeros((5,nspat))
+    output = np.zeros((5, nspat))
     for i in xrange(nspat):
-        output[:,i] = stats.linregress(xdata, ydata[:,i])
+        output[:, i] = stats.linregress(xdata, ydata[:, i])
     return output
 
 
@@ -41,4 +41,3 @@ def test_ols_2d():
     assert time_output < time_reference
     speedup = time_reference / time_output
     print 'Fractional speedup: {:.0f}.0'.format(speedup)
-

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def generate_2d():
     N = 50
     M = 1000
@@ -14,4 +15,4 @@ def generate_1d():
     ndata = 100
     xdata = np.arange(ndata)
     ydata = 2*xdata + np.random.normal(scale=0.1, size=ndata)
-    return xdata, ydata[:,np.newaxis]
+    return xdata, ydata[:, np.newaxis]
