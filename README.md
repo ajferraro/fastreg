@@ -3,7 +3,7 @@
 A faster regression routine for Python.
 
 There are a number of regression routines for Python, but none of them handle
-vectorised calculations. A classic example of this problem is regression in
+vectorised calculations (to my knowledge). A classic example of this problem is regression in
 time of an array which includes spatial dimensions. A simple way to approach
 this would be to loop over each spatial point. This approach is extremely slow.
 A faster approach is to use matrix operations.
