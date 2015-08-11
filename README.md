@@ -15,6 +15,6 @@ independent data to also vary in space is planned).
 
 The equation for the parameters of the OLS problem is:
 
-$\hat{\boldsymbol\beta} = (\mathbf{X}^{\rm T}\mathbf{X})^{-1} \mathbf{X}^{\rm T}\mathbf{y} = \big(\,{\textstyle\sum} \mathbf{x}_i \mathbf{x}^{\rm T}_i \,\big)^{-1} \big(\,{\textstyle\sum} \mathbf{x}_i y_i \,\big).$
+![OLS equation](https://upload.wikimedia.org/math/b/8/d/b8dbcd12ae63080ec03d433eb4e4da8d.png)
 
 **fastreg** implements this in Python and calculates the Pearson correlation coefficient, *p*-value for the hypothesis test whose null hypothesis is that the slope is zero, and the standard error for the slope estimate.
